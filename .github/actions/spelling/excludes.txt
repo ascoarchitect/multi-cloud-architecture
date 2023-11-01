@@ -1,5 +1,6 @@
 # See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-excludes
 (?:^|/)(?i)COPYRIGHT
+(?:^|/)(?i)CODEOWNERS
 (?:^|/)(?i)LICEN[CS]E
 (?:^|/)3rdparty/
 (?:^|/)go\.sum$
@@ -79,5 +80,22 @@ ignore$
 \.xpm$
 \.xz$
 \.zip$
-^\.github/actions/spelling/
+^\.github/
 ^\Q.github/workflows/spelling.yml\E$
+(?:(?i)architecting)
+(?:(?i)ascoarchitect)
+(?:(?i)aws)
+(?:(?i)devsecops)
+(?:(?i)finops)
+(?:(?i)google)
+(?:(?i)GPLv)
+(?:(?i)hashicorp)
+(?:(?i)IAC)
+(?:(?i)KPIs)
+(?:(?i)linkedin)
+(?:(?i)microsoft)
+(?:(?i)pluralsight)
+(?:(?i)SREs)
+(?:(?i)SRE)
+(?:(?i)terraform)
+
