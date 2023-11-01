@@ -37,11 +37,21 @@ You can find out more about each certification path here:
 
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue) https://cloud.google.com/learn/certification
 
-### AWS Training
+### Cloud Provider Training
 
-### Microsoft Azure Training
+Training for your cloud certification path can be delivered through a number of routes, but the most popular are instructor-led and online. Find out more about what is available to you through your learning and development team if you're already working for an organisation. Each cloud provider also provides their own training resources which you cabn find out more within the specific cloud provider sections linked below.
 
-### Google Cloud Platform (GCP) Training
+[A Cloud Guru](https://www.pluralsight.com/cloud-guru) is a resource which is widely used across many organisations globally. They provide training across all through major cloud providers and also branch out into software development, Kubernetes and Terraform amongst other specialist areas. An added bonus is they provide a sandbox environment which provides you with free access to each cloud provider where you can put your learning into practice. This is a fantastic way to satisfy your curiosity without the fear of leaving an expensive VM running and ramping up your personal costs.
+
+[Terraform](https://terraform.io) is a cloud-agonostic development language, developed by Hashicorp, which allows you to deploy infrastructure using code. It's uncommon to come across organistions and product development teams who are not using a form of infrastructure as code (IAC) to manage their cloud resources. Each cloud provider has their own specific IAC language, however, being able to use a single language across multiple providers has a significant benefit. Terraform provide their own training and development track which is avaiable here: https://www.hashicorp.com/certification/terraform-associate?product_intent=terraform. Hashicorp also have other products in their portfolio which are designed to be interoperable. Vault, for example, is a secrets management platform designed to store and encrypt secrets which are used across all your code repositories. Terraform, Vault and other products in the portfolio use the same language, [HCL](https://developer.hashicorp.com/terraform/language), which makes it much easier to transition across products.
+
+Find out more about each cloud provider development path here:
+
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-AWS-orange) [Amazon Web Services](./AWS-Training.md)
+
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue) [Microsoft Azure](./Azure-Training.md)
+
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue) [Google Cloud](./GCP-Training.md)
 
 ### Further Reading
 
