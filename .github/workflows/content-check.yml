@@ -13,4 +13,4 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v4
     - name: Check spelling
-      uses: check-spelling/check-spelling@latest
+      uses: check-spelling/check-spelling@v0.0.22
