@@ -32,9 +32,10 @@ Each cloud provider has specialist training and certification tracks for SME rol
 You can find out more about each certification path here:
 
 https://aws.amazon.com/certification/exams/
-https://azure.microsoft.com/en-us/resources/training-and-certifications#Azure%20certifications
-https://cloud.google.com/learn/certification
 
+https://azure.microsoft.com/en-us/resources/training-and-certifications#Azure%20certifications
+
+https://cloud.google.com/learn/certification
 
 ### AWS Training
 
