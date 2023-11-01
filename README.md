@@ -1,6 +1,6 @@
 # Welcome!
 
-![GitHub](https://img.shields.io/github/license/ascoarchitect/multi-cloud-architecture)
+![GitHub](https://img.shields.io/github/license/ascoarchitect/multi-cloud-architecture?color=purple)
 
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-AWS-orange) ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue) ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue)
 
