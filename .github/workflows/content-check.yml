@@ -1,0 +1,16 @@
+name: Markdown-Validation
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  check-spelling:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+    - name: Check spelling
+      uses: check-spelling/check-spelling@latest
