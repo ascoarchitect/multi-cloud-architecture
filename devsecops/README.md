@@ -22,6 +22,22 @@ YAML: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.ht
 |Bicep|Infrastructure as Code (IaC)|Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Like AWS CloudFormation and Google Cloud Deployment Manager, Bicep is an Azure-specific deployment language for infrastructure code.|https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview|
 |Packer|Images as Code|HashiCorp Packer is a community tool that enables you to create identical machine images for multiple platforms from a single source template. The most common use case is creating golden images that teams across an organisation can use in cloud infrastructure. Packer uses the same development language as Terraform (HCL) so if you're already using Terraform for your IaC capability, then these tools can be closely integrated|https://www.packer.io/|
 
+### Terraform
+
+I'm going to include an extra section on Terraform here, because I can't emphasis enough the need to become familiar with its approach and application. I doubt many if any cloud engineer or cloud developer will not come across Terraform at some point, so here's a basic breakdown of some of the elements.
+
+There are three elements to developing Terraform, including writing the configuration files, planning your deployment then applying your code.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/terraform-approach.png" alt="Terraform Approach" style="height: 400px;"/>
+
+The plan phase allows you to see the changes that your code will make to an environment before it is applied, therefore you can quickly spot any issues before they become irreversable. When it comes to 'applying' your changes using terraform apply, I have come across developers who skip the plan phase and just run ```terraform apply -auto-approve``` which just deploys the code without any checks or warning. Now, whilst there are cases where -auto-approve is used, such as in a pipeline task for automated deployment, these are always preceeded with a plan phase where validation can be carried out. We're all human and prone to mistakes - see it as an advantage rather than an annoying delay.
+
+Finally, I want to cover state. Terraform uses a state file which is essentially a definitive record of what it believes is the current 'state' of the deployment. When you run a plan, terraform will read the state file then compare the changes with the existing environment. As this is just a static file, it's highly recommended that this is places in a fault-tolerant and secure location due to its importance and plain-text sensitivity. Each provider has recommendations on how to store your state file, an example of which is on AWS where it's stored on S3 and uses Amazon DynamoDB as a locking table.
+
+Where you have infrastructure which has been manually deployed using the console and you now want this to be managed using Terraform, you can also import resources into your state file using the ```terraform import``` function.
+
+Read more about all these capabilities and configurations here: https://developer.hashicorp.com/terraform/cli
+
 ### Power of the Pipeline
 
 Draft
