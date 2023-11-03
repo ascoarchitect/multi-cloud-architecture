@@ -15,6 +15,6 @@ pluralsight
 sres
 sre
 terraform
-cdm
-dsl
+CDM
+DSL
 HashiCorp
