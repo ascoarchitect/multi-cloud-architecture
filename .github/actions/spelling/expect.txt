@@ -4,7 +4,7 @@ aws
 devsecops
 finops
 google
-GPLv
+GPLv3
 Hashicorp
 KPIs
 IAC
