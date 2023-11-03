@@ -5,7 +5,7 @@ devsecops
 finops
 google
 GPLv
-hashicorp
+Hashicorp
 KPIs
 IaC
 LinkedIn
