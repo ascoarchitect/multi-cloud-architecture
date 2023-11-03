@@ -109,6 +109,7 @@ jobs:
           cspell:software-terms/dict/softwareTerms.txt
           cspell:k8s/dict/k8s.txt
           cspell:aws/aws.txt
+          cspell:en_GB/src/wordsEnGb.txt
 
   comment-push:
     name: Report (Push)
