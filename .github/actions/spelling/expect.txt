@@ -7,12 +7,12 @@ google
 GPLv
 Hashicorp
 KPIs
-IaC
+IAC
 LinkedIn
 linkedin
 microsoft
 pluralsight
-sres
+SREs
 sre
 terraform
 CDM
