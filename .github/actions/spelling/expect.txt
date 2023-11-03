@@ -4,7 +4,6 @@ aws
 devsecops
 finops
 google
-GPLv3
 GPLv
 Hashicorp
 KPIs
@@ -13,7 +12,6 @@ LinkedIn
 linkedin
 microsoft
 pluralsight
-SREs
 sre
 terraform
 CDM
