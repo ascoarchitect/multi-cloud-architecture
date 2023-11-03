@@ -17,3 +17,6 @@ pluralsight
 SREs
 SRE
 terraform
+CDM
+DSL
+HashiCorp
