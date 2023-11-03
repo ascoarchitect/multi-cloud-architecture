@@ -22,8 +22,25 @@ YAML: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.ht
 |Bicep|Infrastructure as Code (IaC)|Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Like AWS CloudFormation and Google Cloud Deployment Manager, Bicep is an Azure-specific deployment language for infrastructure code.|https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview|
 |Packer|Images as Code|HashiCorp Packer is a community tool that enables you to create identical machine images for multiple platforms from a single source template. The most common use case is creating golden images that teams across an organisation can use in cloud infrastructure. Packer uses the same development language as Terraform (HCL) so if you're already using Terraform for your IaC capability, then these tools can be closely integrated|https://www.packer.io/|
 
+### Power of the Pipeline
+
+Draft
+
+### Continuous Integration (CI)
+
+Draft
+
+### Continuous Deployment (CD)
+
+Draft
+
+### Pre-Commit
+
+Draft
 
 ### Training and Development
+
+Draft
 
 ### Further Reading
 
