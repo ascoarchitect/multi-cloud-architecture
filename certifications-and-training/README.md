@@ -39,7 +39,7 @@ You can find out more about each certification path here:
 
 ### Cloud Provider Training
 
-Training for your cloud certification path can be delivered through a number of routes, but the most popular are instructor-led and online. Find out more about what is available to you through your learning and development team if you're already working for an organisation. Each cloud provider also provides their own training resources which you cabn find out more within the specific cloud provider sections linked below.
+Training for your cloud certification path can be delivered through a number of routes, but the most popular are instructor-led and online. Find out more about what is available to you through your learning and development team if you're already working for an organisation. Each cloud provider also provides their own training resources which you can find out more within the specific cloud provider sections linked below.
 
 [A Cloud Guru](https://www.pluralsight.com/cloud-guru) is a resource which is widely used across many organisations globally. They provide training across all through major cloud providers and also branch out into software development, Kubernetes and Terraform amongst other specialist areas. An added bonus is they provide a sandbox environment which provides you with free access to each cloud provider where you can put your learning into practice. This is a fantastic way to satisfy your curiosity without the fear of leaving an expensive VM running and ramping up your personal costs.
 
