@@ -24,7 +24,7 @@ Each cloud provider has their own certification tracks, but this table helps to 
 | Suggested Job Roles | Amazon Web Services | Microsoft Azure | Google Cloud Platform
 |--|--|--|--|
 |Junior Developer, Executive Leader, Finance Head, Procurement Head, Technology Head, Security Head| AWS Cloud Practitioner|AZ-100 Azure Fundamental|Cloud Digital Leader
-|Developers, Cloud Leaders, Site Reliability Engineers (SREs), Cloud Engineers, IT Operations Teams, Information Security Analysts, Database Administrators|AWS Solution Architect Associate|AZ-104 Azure Administration|Cloud Engineer|
+|Developers, Cloud Leaders, Site Reliability Engineers (SRE), Cloud Engineers, IT Operations Teams, Information Security Analysts, Database Administrators|AWS Solution Architect Associate|AZ-104 Azure Administration|Cloud Engineer|
 |Senior Developers, Senior Cloud Engineers|AWS Solution Architect Professional|Azure Solutions Architect|Cloud Architect|
 
 Each cloud provider has specialist training and certification tracks for SME roles such as development, database administration, security and others which can be taken alongside the generalist tracks detailed above.
