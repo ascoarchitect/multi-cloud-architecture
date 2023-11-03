@@ -2,6 +2,32 @@
 
 ### Introduction
 
+Draft
+
+### Common Misconceptions
+
+Draft
+
+### FinOps Framework
+
+Draft
+
+### It's All About Culture
+
+Draft
+
+### Personas
+
+Draft
+
+### Tagging and Reporting
+
+Draft
+
+### Tools
+
+Draft
+
 ### Further Reading
 
 #### [FinOps Foundation](https://www.finops.org/)
