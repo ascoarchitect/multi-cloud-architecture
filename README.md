@@ -10,10 +10,11 @@ This repository is for sharing knowledge, thoughts and approaches to multi-cloud
 
 This repository is licensed under GNU GPLv3. Find out more about this license [here](https://choosealicense.com/licenses/gpl-3.0/), or view the license terms [here](./LICENSE).
 
- - **[Certifications and Training](./certifications-and-training/README.md)**
- - **[DevSecOps](./devsecops/README.md)**
- -  **[Multi-Cloud Service Comparison](./multi-cloud-service-comparison/README.md)**
- -  **[Landing Zones](./landing-zones/README.md)**
- -  **[Security](./security/README.md)**
- -  **[Well-Architected](./well-architected/README.md)**
+ -  **[Certifications and Training](./certifications-and-training/README.md)**
+ -  **[DevSecOps](./devsecops/README.md)**
  -  **[FinOps](./finops/README.md)**
+ -  **[Landing Zones](./landing-zones/README.md)**
+ -  **[Multi-Cloud Service Comparison](./multi-cloud-service-comparison/README.md)**
+ -  **[Security](./security/README.md)**
+ -  **[Sustainability](./sustainability/README.md)**
+ -  **[Well-Architected](./well-architected/README.md)**
