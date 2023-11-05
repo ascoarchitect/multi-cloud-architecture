@@ -40,19 +40,40 @@ Read more about all these capabilities and configurations here: https://develope
 
 ### Power of the Pipeline
 
-Draft
+Hopefully after reading this section, you'll get a feel for why I chose to give it this title. The development pipeline is what stands between the code that a developer writes and the product that the code goes on to create. It is there to hold everyone to account, and act as an authoritative intermediary which prevents any one 'actor' or human from making all the changes. The benefit this provides is that it uses automation to carry out many of the tasks that would require peer review or security auditing, and instead allows those same personas to secure the checks instead.
+
+Think about this as an example: The Information Security team are concerned about the risk of a developer accidentally (or unfortunately in rare cases, intentionally) committing credentials into a repository which is then published into the application or public resource. Of course, the risk is that a hacker could obtain these credentials and either launch an attack on the platform or sell the credentials to a number of rather unsavoury actors. Taking the human validation approach would mean that all code would need to be checked manually for credentails and signed off by the information security team. The obvious problem here is that this then promotes that team to a bottleneck which will ultimately lead to reduced throughput (or increased cycle time) for each release.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/credential-scan.png" alt="Credential Scanning" style="height: 300px;"/>
+
+Introducing the pipeline. Rather than manually checking code, you create a CI task which automatically scans all the code for known 'patterns' and rejects a code commit if it finds anything that matches. The information security team can still monitor the tool and even carry out spot checks, but what this now means is that a developer can work much faster, and safe in the knowledge that their code and human errors are being checked over by one of a series of pipeline checks.
 
 ### Continuous Integration (CI)
 
-Draft
+Continuous Integration is the first part of the pipeline and it focuses on the building and testing of an application. The tasks are usually started off with a developer committing their code to a repository which automatically starts the build process. Now, the tasks that make up a build can vary based on the type of application being writted, but you would expect to have a compiler configured with the build tasks required, or in the case of IaC, it would run a plan task to project all the changes that will be made to the infrastructure. You can expect to see tools such as Jenkins, Packer, Terraform, Docker and many others used for this stage.
 
-### Continuous Deployment (CD)
+Now the code is build or the deployment planned, next the testing takes place. These tests will carry out a variety of different functions, and would usually be defined as a collaborative effort between the developers, the testers, the infrastructure and security teams. Here is a non-exhaustive list of the tests you would expect to be carried out depending on what is being deployed:
 
-Draft
+* Unit Testing - Pre-defined tests carried out on chunks of code to verify it functions as expected
+* Static Analysis (SAST) - Checking code quality and whether any vulnerabilities have been introduced in how the code has been developed. This could be where Terraform code is not aligning with best practice such as having a security group which is too permissive. Technically it would work, but it's poor practice, and that is where a SAST check would fail the test.
+* Functional Analysis - This is for verifying that the application as a whole is functioning as required. You would expect to see a tool such as Selenium used here which carrys out a set of steps to ensure that the appplication doesn't respond incorrectly. An example here would be logging in to a web application - Selenium would launch a browser session in a contained environment, navigate to the right page, enter test credentials into the web page and automate the clicking of the login button.
+* Vulnerability Analysis - Used for ensuring that the code is secure and doesn't introduce any unintentional vulnerabilities such as back doors or session hijacking opportunities which could be attacked.
+* Dependency Analysis - When using external packages which are written by third parties, it's important to validate that those packages are not introducing issues into your application, so this analysis looks at any modules or packages which are being imported as part of the build process.
+* Performance Testing and Profiling - Finally, this stage would look at how performant your application is and map out, or profile, each step so a developer can understand whether there's an inefficient SQL query causing slow load times, or any assets which haven't been optimised for size and resolution.
 
-### Pre-Commit
+### Continuous Delivery (CD)
 
-Draft
+Congratulations, your code has passed all the required checks so it's now time to deploy. Release automation takes care of connecting to the deployment servers or cloud environments and executing the deployment of the changes which have been committed into the repository. The advantage this has is that it can automate the injection of variables and secrets to connect and configure, often using just-in-time credentials to prevent the use of long-lived secrets which could be exposed. Additionally, you can configure your deployment steps to deploy to multiple environments (dev, test, staging, production etc.) using the same mechanism. This can be seen where code is 'promoted' up through environments for different teams to use and test.
+
+### Pre-Commit: "A framework for managing and maintaining multi-language pre-commit hooks."
+
+As the name describes, the pre-commit framework encompases a series of tests which can be run before code it committed to a repository. As you learned earlier when looking at CI and CD, the pipeline runs all the required tests for the application, however, these can often take some time to execute and fail which leaves the developer constantly waiting for results to be posted back to them so they know whether the code works. Pre-commit hooks can be fired localled which essentially gives a developer instant feedback for certain tests which is great for them, but you can also block code from being committed under certain circumstances.
+
+Pre-commit is configured using a static YAML file which defines the tests which are carried out, and also which ones must pass to allow the commit to take place. The developer installs the pre-commit hooks which installs all the required test packages on their machine, allowing tests to run in that environment. The framework supports a number of different languages, and in some cases can automatically remediate findings for the developer.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/pre-commit.png" alt="Credential Scanning" style="height: 300px;"/>
+
+You can find out more about pre-commit and how you might benefit from introducing it into your workflow [here](https://pre-commit.com/).
 
 ### Training and Development
 
@@ -60,6 +81,14 @@ Draft
 
 ### Further Reading
 
-[Infrastructure as Code for Beginners: Deploy and Manage your cloud-based services with Terraform and Ansible](https://amzn.to/40pKAsK)
+**[Infrastructure as Code for Beginners: Deploy and Manage your cloud-based services with Terraform and Ansible](https://amzn.to/40pKAsK)**
 
 A great introduction into how Terraform and Ansible can be used in a cloud development environment.
+
+**[What is Continuous Integration?](https://about.gitlab.com/topics/ci-cd/benefits-continuous-integration/)**
+
+The team at GitLab have written a blog post which expands on what CI is all about.
+
+**[What is GitOps?](https://about.gitlab.com/topics/gitops/)**
+
+You might come across the term GitOps when describing ways of working with DevOps. GitOps is essentially a framework which was originally coined by Alexis Richardson, CEO, Weaveworks, and encompases "scalable applications in modern, dynamic environments such as public, private, and hybrid cloud". You can read more about what it means and how it might be a way of working you could look to adopt.
