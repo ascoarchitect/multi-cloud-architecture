@@ -77,7 +77,11 @@ You can find out more about pre-commit and how you might benefit from introducin
 
 ### Training and Development
 
-Draft
+As you've read in this section, DevSecOps is made up of many different tools and features which are underpinned by Git which manages how you interact with the repository where your code is stored. When looking at training and development for DevSecOps, I would highly recommend that you become familiar with Git to start with, otherwise you will likely get quite lost. Codecademy has a level-100 course which you can take [here](https://www.codecademy.com/learn/learn-git) which covers all the foundations that you need to get you started.
+
+Next, you should familiarise yourself with some of the key tools that you will cross paths with when developing and managing a pipeline. Firstly, take a look at GitHub, GitLab and CodeCommit as three of many repositories which also have built-in pipeline mechanisms. Learn how the pipelines operate and build your first simple pipeline task to familiarise yourself with the format and best approach for your needs. You can of course then enable your own pre-commit checks to get a feeling for the end-to-end experience.
+
+A Cloud Guru has an excellent catalog of courses on the different DevOps platforms which I would recommend taking a look at. If you're not already a subscriber, you can sign-up for a free trial or look out for offers which are published throughout the year: https://www.pluralsight.com/cloud-guru/browse?q=devops.
 
 ### Further Reading
 
