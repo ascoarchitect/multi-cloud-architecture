@@ -8,7 +8,7 @@ This resource will look to summarise some of the key components, but does not re
 
 ### Common Misconceptions
 
-FinOps is not about becoming cheap.
+FinOps is not about having the cheapest possible cloud bill.
 
 Cheaper is not necessarily better.
 
