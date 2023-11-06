@@ -67,11 +67,31 @@ Read more about each FinOps persona and understand their individual objectives, 
 
 ## Tagging and Reporting
 
-Draft
+To understand how your costs are attributed to projects and services, you need to use metadata to 'tag' or 'label' resources and accounts with information which can be used to drive your reports. Whilst the method fo achieving this will vary slightly between cloud providers, you will generally see these stored as 'key/value' pairs with each record. Tags can be applied at the resource, account and organisational level depending on the reporting requirements. For example, a resource might be tagged to identify the application ID or support contact for a database and an account might be the environment that it is being used for (e.g. development, production), or cost centre that will be billed.
+
+This provides tremendous granularity for your cost allocation abilities where a single account may have a number of resources which are billed to different cost centres. For example, the database and data stores could be managed by one cost centre, security tooling by the information security team and underlying landing zone and networking by a shared services cost centre. These decisions are called business rules, and they determine how costs will be allocated based on tags and are generally held externally from the cloud provider.
+
+Reporting is the central source of truth for FinOps and where many of the personas will interact with the information. By ingesting the data from your cloud provider(s) and analysing it centrally against your business rules, KPIs and forecasts, you're able to translate thousands or even millions of data points into meaningful dashboards and reports which can drive decisions. For all organisations, but specifically those in the walk and run phases, they should be ingesting data from their cloud providers using automation wherever possible to provide the ability for dashboards to be updated in near real-time.
 
 ## Tools
 
-Draft
+As the reader, I hope that you haven't just jumped down to this section to find a list of tools which will turnkey your organisation into FinOps legends - this simply won't happen. Whilst I'll recommend a couple of tools to look at, I can't emphasise enough the need to back up any tooling with the cultural changes required to implement the recommendations that would be provided. You need to understand why the recommendations are being made so you can determine whether they are in fact false positives or require action. Each workload needs to provide the context for the data which will allow each persona to understand which changes should be made - remember the lifecycle.
+
+To assist with this, I would encourage you to firstly look at the native tools available in each of your cloud platforms in use to get a feel for the data which is generated. Next, you'll need to have tagged all your accounts and resources so it's much easer to group the data points together in your tool of choice.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/aws-cost-explorer.png" alt="AWS Cost Explorer" style="height: 400px;"/>
+
+Using [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) which is a free tool available on the AWS Console, you are able to filter all your costs using built-in categories and the tags which you have set on resources. This will allow you to quickly validate the costs for a set of resources by cost centre, environment, project or whatever is specific to your organisation. Getting your tagging agreed between the different personas then implemented before introducing any additional tools will allow you to understand the reports and recommendations which are generated.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/cloud-intelligence-dashboard.png" alt="Cloud Intelligence Dashboard" style="height: 400px;"/>
+
+AWS Well-Architected Labs has a series of Cloud Intelligence dashboards which allow you to connect Grafana to your cost reporting data and gain instant insights across your organisation. Find out more here: https://www.wellarchitectedlabs.com/cloud-intelligence-dashboards/
+
+|Tool|Details|
+|---|---|
+|Azure Cost Explorer|Available as a free tool for analysing your Azure Cloud costs, with a variety of analysis and filtering capabilities based on your tagging strategy. The tool provides forecasts based on historical and current usage to allow you to determine whether there are any trends which can be optimised.<br/>Find out more here: https://azure.microsoft.com/en-gb/products/cost-management.|
+|Grafana|Grafana is a free and open-source platform which can be used for reporting data of all types. Built-in connectors are available for all popular cloud platforms allowing you to build your own visuals linked to organisational KPIs. Whilst this tool requires more up-front investment, unless you deploy pre-authored community and vendor dashboards, you can start off with simple visualisations then iterate as your team becomes more proficient. This tools also allows each persona to have access to the data for building out their own dashboards. The key benefit of using this platform is that is has a huge community and can also be used for visualising data from other sources outside of FinOps, making it a strategic reporting capability.<br/>Find out more here: https://grafana.com/grafana/|
+|Apptio Cloudability|Cloudability brings financial accountability to the variable, consumption-based spending model of cloud. Allocation rules easily assign costs back to the business using the Business Mapping engine, ensuring an automated and complete chargeback. The platform provides a single-pane-of-glass, multi-cloud feature set that enables team ownership of spend via AI-backed anomaly detection, curated and customisable dashboards, budgets and forecasts, container analytics, and comprehensive optimisation recommendations. <br/>Find out more here: https://www.finops.org/members/apptio/|
 
 ## Further Reading
 
