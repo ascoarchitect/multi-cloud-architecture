@@ -1,4 +1,4 @@
-name: Check Spelling
+name: Check Spelling and Export
 
 # Comment management is handled through a secondary job, for details see:
 # https://github.com/check-spelling/check-spelling/wiki/Feature%3A-Restricted-Permissions
@@ -167,18 +167,3 @@ jobs:
         experimental_apply_changes_via_bot: 1
         checkout: true
         ssh_key: "${{ secrets.CHECK_SPELLING }}"
-
-  create-pdf:
-    name: Create PDF from Markdown
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      actions: read
-    steps:
-    - name:  Create PDF
-      uses: Lothindir/pandoc-markdown-action@v0.4
-      with:
-        markdown: "./*.md"
-        pdf: "./*.pdf"
-        template: none
