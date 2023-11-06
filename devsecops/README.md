@@ -1,12 +1,12 @@
 # DevSecOps
 
-### Introduction
+## Introduction
 
 DevSecOps is a common framework which describes the mechanisms which developers use to develop, secure and deploy their code. This is particularly popular within the cloud space as it allows developers to work at pace, whilst allowing information security teams to assure the pipeline tasks to automatically catch poor code quality and vulnerabilities such as credentials in repositories.
 
 Tools in this space are *constantly* changing, so please don't take this as an exhaustive list. If you have experience of working with a specific tool, [submit a feature request](https://github.com/ascoarchitect/multi-cloud-architecture/issues/new) with all the details to get them added here for all to learn.
 
-### Recommended Tools
+## Recommended Tools
 
 Most of the tools below use the declarative languages YAML or JSON, so it's recommended to become familiar with how to structure these languages to make it easier to understand the required structure and diagnose issues with deployments.
 
@@ -22,7 +22,7 @@ YAML: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.ht
 |Bicep<br/>![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue)|Infrastructure as Code (IaC)|Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Like AWS CloudFormation and Google Cloud Deployment Manager, Bicep is an Azure-specific deployment language for infrastructure code.|https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview|
 |Packer<br/>![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Agnostic-darkgreen)|Images as Code|HashiCorp Packer is a community tool that enables you to create identical machine images for multiple platforms from a single source template. The most common use case is creating golden images that teams across an organisation can use in cloud infrastructure. Packer uses the same development language as Terraform (HCL) so if you're already using Terraform for your IaC capability, then these tools can be closely integrated|https://www.packer.io/|
 
-### Terraform
+## Terraform
 
 I'm going to include an extra section on Terraform here, because I can't emphasis enough the need to become familiar with its approach and application. I doubt many if any cloud engineers or cloud developers will not come across Terraform at some point, so here's a basic breakdown of some of the elements.
 
@@ -38,7 +38,7 @@ Where you have infrastructure which has been manually deployed using the console
 
 Read more about all these capabilities and configurations here: https://developer.hashicorp.com/terraform/cli
 
-### Power of the Pipeline
+## Power of the Pipeline
 
 Hopefully after reading this section, you'll get a feel for why I chose to give it this title. The development pipeline is what stands between the code that a developer writes and the product that the code goes on to create. It is there to hold everyone to account, and act as an authoritative intermediary which prevents any one 'actor' or human from making all the changes. The benefit this provides is that it uses automation to carry out many of the tasks that would require peer review or security auditing, and instead allows those same personas to secure the checks instead.
 
@@ -48,7 +48,7 @@ Think about this as an example: The Information Security team are concerned abou
 
 Introducing the pipeline. Rather than manually checking code, you create a CI task which automatically scans all the code for known 'patterns' and rejects a code commit if it finds anything that matches. The information security team can still monitor the tool and even carry out spot checks, but what this now means is that a developer can work much faster, and safe in the knowledge that their code and human errors are being checked over by one of a series of pipeline checks.
 
-### Continuous Integration (CI)
+## Continuous Integration (CI)
 
 Continuous Integration is the first part of the pipeline and it focuses on the building and testing of an application. The tasks are usually started off with a developer committing their code to a repository which automatically starts the build process. Now, the tasks that make up a build can vary based on the type of application being written, but you would expect to have a compiler configured with the build tasks required, or in the case of IaC, it would run a plan task to project all the changes that will be made to the infrastructure. You can expect to see tools such as Jenkins, Packer, Terraform, Docker and many others used for this stage.
 
@@ -61,7 +61,7 @@ Now the code is build or the deployment planned, next the testing takes place. T
 * Dependency Analysis - When using external packages which are written by third parties, it's important to validate that those packages are not introducing issues into your application, so this analysis looks at any modules or packages which are being imported as part of the build process.
 * Performance Testing and Profiling - Finally, this stage would look at how performant your application is and map out, or profile, each step so a developer can understand whether there's an inefficient SQL query causing slow load times, or any assets which haven't been optimised for size and resolution.
 
-### Continuous Delivery (CD)
+## Continuous Delivery (CD)
 
 Congratulations, your code has passed all the required checks so it's now time to deploy. Release automation takes care of connecting to the deployment servers or cloud environments and executing the deployment of the changes which have been committed into the repository. The advantage this has is that it can automate the injection of variables and secrets to connect and configure, often using just-in-time credentials to prevent the use of long-lived secrets which could be exposed. Additionally, you can configure your deployment steps to deploy to multiple environments (dev, test, staging, production etc.) using the same mechanism. This can be seen where code is 'promoted' up through environments for different teams to use and test.
 
@@ -71,7 +71,7 @@ The key difference between blue/green and canary deployment methods is that with
 
 Check out the [Further Reading](./README.md#Further-Reading) section below for a great book which dives deep into DevOps and CI/CD.
 
-### Pre-Commit: "A framework for managing and maintaining multi-language pre-commit hooks."
+## Pre-Commit: "A framework for managing and maintaining multi-language pre-commit hooks."
 
 As the name describes, the pre-commit framework encompasses a series of tests which can be run before code it committed to a repository. As you learned earlier when looking at CI and CD, the pipeline runs all the required tests for the application, however, these can often take some time to execute and fail which leaves the developer constantly waiting for results to be posted back to them so they know whether the code works. Pre-commit hooks can be fired localled which essentially gives a developer instant feedback for certain tests which is great for them, but you can also block code from being committed under certain circumstances.
 
@@ -81,7 +81,7 @@ Pre-commit is configured using a static YAML file which defines the tests which 
 
 You can find out more about pre-commit and how you might benefit from introducing it into your workflow [here](https://pre-commit.com/).
 
-### Training and Development
+## Training and Development
 
 As you've read in this section, DevSecOps is made up of many different tools and features which are underpinned by Git which manages how you interact with the repository where your code is stored. When looking at training and development for DevSecOps, I would highly recommend that you become familiar with Git to start with, otherwise you will likely get quite lost. Codecademy has a level-100 course which you can take [here](https://www.codecademy.com/learn/learn-git) which covers all the foundations that you need to get you started.
 
@@ -89,7 +89,7 @@ Next, you should familiarise yourself with some of the key tools that you will c
 
 A Cloud Guru has an excellent catalog of courses on the different DevOps platforms which I would recommend taking a look at. If you're not already a subscriber, you can sign-up for a free trial or look out for offers which are published throughout the year: https://www.pluralsight.com/cloud-guru/browse?q=devops.
 
-### Further Reading
+## Further Reading
 
 **[Infrastructure as Code for Beginners: Deploy and Manage your cloud-based services with Terraform and Ansible](https://amzn.to/40pKAsK)**
 
