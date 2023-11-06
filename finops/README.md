@@ -26,6 +26,12 @@ The specific KPIs used are part of the discovery and deliverables that make up F
 
 Used under license by [FinOps Foundation](https://www.finops.org)
 
+The FinOps framework defines three phases which describe the maturity of an organisation's approach to FinOps. It's also highlighted that no single phase is necessarily better than anothwer, but instead should be catered for a situation. In the Run phase for example, you would expect an organisation to be utilising reserved instances (RI), savings plans or optimised spending when the project may be in the inception phase and exploring the use of serverless, where it's difficult to forecast the levels of compute or services required. Instead, you might take a crawl approach which allows the project to hone its focus on where it wants to get, but implement good principles which can be revised at a later time.
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/finops-lifecycle.png" alt="FinOps Lifecycle" style="height: 300px;"/>
+
+FinOps is an iterative process, much like Agile and DevOps where you gather data, analyse and enrich to provide information then make change decisions and implement, then gather more data on the effects of those changes. When you tie together the maturity phases with the lifecycle approach, your FinOps team, engineers and wider organisation will quickly improve its awareness of best practices and what works best. This will lead to more frequent and less individually impactful decisions as teams develop a 'muscle memory'.
+
 ### Principles
 
 * Teams need to collaborate
