@@ -65,6 +65,12 @@ Now the code is build or the deployment planned, next the testing takes place. T
 
 Congratulations, your code has passed all the required checks so it's now time to deploy. Release automation takes care of connecting to the deployment servers or cloud environments and executing the deployment of the changes which have been committed into the repository. The advantage this has is that it can automate the injection of variables and secrets to connect and configure, often using just-in-time credentials to prevent the use of long-lived secrets which could be exposed. Additionally, you can configure your deployment steps to deploy to multiple environments (dev, test, staging, production etc.) using the same mechanism. This can be seen where code is 'promoted' up through environments for different teams to use and test.
 
+Take a read through [this article](https://martinfowler.com/bliki/CanaryRelease.html?ref=wellarchitected) by [Danilo Sato](http://www.dtsato.com/) where he delves into the world of canary deployments which is certainly worth becoming familiar with. Canary and Blue/Green deployments are mechanisms which are used for deploying changes alongside your existing environment, then 'switching' the traffic flow over which provides a robust mechanism for confirming that the changes are working as expected in your live environment and an ability to 'switch back' if things go slightly sideways.
+
+The key difference between blue/green and canary deployment methods is that with canary deployment the switchover is incremental, whereas the blue/green deployment method you're essentially promoting your staging environment into production in one big switch. Working out which is best for your use case will be dependent on a number of factors, but it's also worth highlighting that these are not the only two methods.
+
+Check out the [Further Reading](./README.md#Further-Reading) section below for a great book which dives deep into DevOps and CI/CD.
+
 ### Pre-Commit: "A framework for managing and maintaining multi-language pre-commit hooks."
 
 As the name describes, the pre-commit framework encompasses a series of tests which can be run before code it committed to a repository. As you learned earlier when looking at CI and CD, the pipeline runs all the required tests for the application, however, these can often take some time to execute and fail which leaves the developer constantly waiting for results to be posted back to them so they know whether the code works. Pre-commit hooks can be fired localled which essentially gives a developer instant feedback for certain tests which is great for them, but you can also block code from being committed under certain circumstances.
@@ -88,6 +94,10 @@ A Cloud Guru has an excellent catalog of courses on the different DevOps platfor
 **[Infrastructure as Code for Beginners: Deploy and Manage your cloud-based services with Terraform and Ansible](https://amzn.to/40pKAsK)**
 
 A great introduction into how Terraform and Ansible can be used in a cloud development environment.
+
+**[Automating DevOps with GitLab CI/CD Pipelines](https://amzn.to/4678IBr)**
+
+This book is for DevOps/DevSecOps engineers, application developers, release engineers, quality assurance engineers, security engineers, SREs, and sysadmins looking to implement fast, secure and automated software development lifecycle tasks using continuous integration and continuous delivery (CI/CD) pipelines.
 
 **[What is Continuous Integration?](https://about.gitlab.com/topics/ci-cd/benefits-continuous-integration/)**
 
