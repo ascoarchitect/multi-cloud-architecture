@@ -10,7 +10,8 @@ jobs:
         id: files_list
         run: |
           mkdir output  # create output dir
-          echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
+          echo "files_old=$(printf '"%s" ' *.md)"
+          echo "files=$(find . -type f -name '*.md') > $GITHUB_OUTPUT
 
       - uses: docker://pandoc/latex:2.9
         with:
