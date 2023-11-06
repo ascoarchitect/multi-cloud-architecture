@@ -24,9 +24,9 @@ YAML: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.ht
 
 ### Terraform
 
-I'm going to include an extra section on Terraform here, because I can't emphasis enough the need to become familiar with its approach and application. I doubt many if any cloud engineer or cloud developer will not come across Terraform at some point, so here's a basic breakdown of some of the elements.
+I'm going to include an extra section on Terraform here, because I can't emphasis enough the need to become familiar with its approach and application. I doubt many if any cloud engineers or cloud developers will not come across Terraform at some point, so here's a basic breakdown of some of the elements.
 
-There are three elements to developing Terraform, including writing the configuration files, planning your deployment then applying your code.
+There are three phases to developing Terraform, including writing the configuration files, planning your deployment then applying your code.
 
 <img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/terraform-approach.png" alt="Terraform Approach" style="height: 400px;"/>
 
