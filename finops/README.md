@@ -1,12 +1,12 @@
 # FinOps
 
-### Introduction
+## Introduction
 
 FinOps has always been an important foundation to deploying workloads into the cloud, however, with more organisations trying to derive better value from their cloud solutions this has now become a key focus. The Linux Foundation established a FinOps framework which addresses all of the cultural and process-based changes which need to be incorporated to ensure that it becomes part of your cloud DNA rather than a report which sits on a dashboard.
 
 This resource will look to summarise some of the key components, but does not replace the need for more people becoming certified FinOps practitioners. You can find out more about the training and certification in the further reading section below.
 
-### Common Misconceptions
+## Common Misconceptions
 
 FinOps is not about having the cheapest possible cloud bill.
 
@@ -18,27 +18,44 @@ The specific KPIs used are part of the discovery and deliverables that make up F
 
 *"Unit economics and value-based metrics demonstrate business impact better than aggregate spend. Think of cloud as a driver of innovation, a driver of capability, and a way to get speed to market and customer satisfaction up."*
 
-### FinOps Framework
+## FinOps Framework
+
+<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/finops-framework.png" alt="FinOps Framework" style="height: 400px;"/>
+
+![Creative Commons License](https://licensebuttons.net/l/by/4.0/88x31.png "CC-By-4.0 License")
+
+Used under license by [FinOps Foundation](https://www.finops.org)
+
+### Principles
+
+* Teams need to collaborate
+* Decisions are driven by the business value of cloud
+* Everyone takes ownership of their cloud usage
+* FinOps reports should be accessible and timely
+* A centralised team drives FinOps
+* Take advantage of the variable cost model of the cloud
+
+## It's All About Culture
 
 Draft
 
-### It's All About Culture
+## Personas
 
 Draft
 
-### Personas
+## Tagging and Reporting
 
 Draft
 
-### Tagging and Reporting
+## Tools
 
 Draft
 
-### Tools
+## Further Reading
 
-Draft
+#### [FinOps Definition](https://github.com/finopsfoundation/definition)
 
-### Further Reading
+This repository holds the canonical definitions, lifecycle, capabilities, etc for FinOps.
 
 #### [FinOps Foundation](https://www.finops.org/)
 The FinOps Foundation is the defacto resource for learning about FinOps with a rich blog and training materials for implementing the right FinOps mechanisms into your organisation. The FinOps Certified Practitioner course and certification prepares developers, leaders and executives with the best foundation for high quality code development and introducing the right cultural changes to support a successful cloud journey.
