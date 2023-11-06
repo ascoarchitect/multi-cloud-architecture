@@ -6,7 +6,7 @@ finops
 google
 GPLv
 Hashicorp
-KPIs
+KPI
 IAC
 LinkedIn
 linkedin
@@ -20,3 +20,6 @@ HashiCorp
 SAST
 Weaveworks
 Codecademy
+aiml
+generativeai
+sysadmins
