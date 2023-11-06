@@ -81,6 +81,16 @@ Pre-commit is configured using a static YAML file which defines the tests which 
 
 You can find out more about pre-commit and how you might benefit from introducing it into your workflow [here](https://pre-commit.com/).
 
+There are a huge number of out-of-the-box pre-commit hooks which are available to be consumed, but here's a small selection which are a great place to start:
+
+|Hook|Description|
+|---|---|
+|Pre-commit hooks by Pre-commit|It wouldn't be right not to start with the hooks that are provided by pre-commit themselves. At time of writing, there are over 30 hooks available which range from formatting checks such as check-json and check-yaml, detecting the presence of private keys with detect-private-key and preventing developers committing directly to specific branches with no-commit-to-branch.<br/>Find out more here: https://github.com/pre-commit/pre-commit-hooks.
+|Pre-commit Terraform by Anton Babenko|This hook collection provides most of the tools that you could want to run when developing Terraform code. The repository also doffs its hat to other tools such as Terradocs for automatic documentation of code and Infracost for reporting on the run cost of your deployment. Infracost on its own is a fantastic way of providing your developers with the ability to quantify the cost of their product, and you're also able to wrap policies such as cost limits into your configuration.<br/>Find out more here: https://github.com/antonbabenko/pre-commit-terraform.|
+|Checkov by BridgeCrew and Prisma Cloud|Checkov is a multi-language vulnerability scanner which is often used as part of a SAST pipeline check. Bringing this closer to the developer as part of a pre-commit check allows the code to be scanned for any issues then provided with a report of links and documentation for how to remediate the findings.<br/>Find out more here: https://github.com/bridgecrewio/checkov.|
+
+Check out the pre-commit hook list [here](https://pre-commit.com/hooks.html) but also remember that this is not an exhaustive list. You can find out whether your tool provider has pre-commit hooks within their documentation, however, if they already provide tools for use within the CI pipeline, then you'll generally find that there is a pre-commit hook available.
+
 ## Training and Development
 
 As you've read in this section, DevSecOps is made up of many different tools and features which are underpinned by Git which manages how you interact with the repository where your code is stored. When looking at training and development for DevSecOps, I would highly recommend that you become familiar with Git to start with, otherwise you will likely get quite lost. Codecademy has a level-100 course which you can take [here](https://www.codecademy.com/learn/learn-git) which covers all the foundations that you need to get you started.
