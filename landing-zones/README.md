@@ -17,7 +17,7 @@ Jump to: [Microsoft Azure](./README.md#microsoft-azure) [Google Cloud](./README.
 > 
 > AWS CAF groups its capabilities in six perspectives: Business, People, Governance, Platform, Security, and Operations. Each perspective comprises a set of capabilities that functionally related stakeholders own or manage in the cloud transformation journey. Use the AWS CAF to identify and prioritise transformation opportunities, evaluate and improve your cloud readiness, and iteratively evolve your transformation roadmap.
 
-<img src="./aws-caf-value-chain.png" alt="AWS CAF Value Chain" style="height: 400px;"/>
+<img src="./aws-caf-value-chain.png" alt="AWS CAF Value Chain" style="height: 300px;"/>
 
 The AWS CAF provides a clear roadmap for cloud adoption within your organisation and places a heavy focus on the need to adapt your culture to take full advantage of the cloud. The need to adapt processes and invest in training cannot be understated to ensure that you build the right teams from external hires or internal up-skilling who are set up for success. They need to technically deliver your migration and operational capability, but also promote ways of working and help teams who may have only worked with on-premises servers for the last 15 or more years. Cloud Adoption should not simply be about hiring a load of new team members who lack the historical context of the organisation as this will introduce an 'us and them' culture. Instead this needs to be a fine balance between adapting existing roles, hiring new talent and leveraging partner support for acceleration and tiger-teaming.
 
@@ -34,7 +34,18 @@ The AWS Cloud Migration Journey has three different phases:
 ### Microsoft Azure
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue)
 
+> The Microsoft Cloud Adoption Framework for Azure guides you through each consideration and implementation along the phases of your cloud adoption journey. Use the Cloud Adoption Framework across your organization to prepare decision makers, central IT, and the cloud center of excellence (CCoE) for your organization's cloud adoption efforts.
 
+<img src="./azure-caf-overview.png" alt="Azure CAF Overview" style="height: 300px;"/>
+
+Microsoft has developed their Cloud Adoption Strategy Evaluator to help you ascertain which areas of your current processes and ways of working require focus to take the best advantage of the cloud: https://learn.microsoft.com/en-us/assessments/8fefc6d5-97ac-42b3-8e97-d82701e55bab/. 
+
+The Azure Cloud Adoption Journey has four different phases:
+
+* **Strategy** - To take advantage of this great potential, start by documenting your business strategy in a way that's both understandable to cloud technicians and palatable to your business stakeholders.
+* **Plan** - Convert the aspirational goals of a cloud adoption strategy into an actionable plan. Your collective cloud teams can use the cloud adoption plan to guide their technical efforts and align them with your organization's business strategy.
+* **Ready** - Before adoption can begin, you create a landing zone to host the workloads that you plan to build in or migrate to the cloud.
+* **Adopt** - The Adopt methodology shows you how to migrate, modernize, innovate, and relocate workloads in Azure.
 
 ### Google Cloud
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue)
