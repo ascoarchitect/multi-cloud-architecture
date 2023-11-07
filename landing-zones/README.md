@@ -8,6 +8,8 @@ AWS, Microsoft Azure and Google Cloud each have their own design for an LZ on th
 
 ## Cloud Adoption Framework (CAF)
 
+Jump to: [Microsoft Azure](./README.md#microsoft-azure) [Google Cloud](./README.md#google-cloud)
+
 ### Amazon Web Services
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-AWS-orange)
 
@@ -15,9 +17,19 @@ AWS, Microsoft Azure and Google Cloud each have their own design for an LZ on th
 > 
 > AWS CAF groups its capabilities in six perspectives: Business, People, Governance, Platform, Security, and Operations. Each perspective comprises a set of capabilities that functionally related stakeholders own or manage in the cloud transformation journey. Use the AWS CAF to identify and prioritise transformation opportunities, evaluate and improve your cloud readiness, and iteratively evolve your transformation roadmap.
 
-The AWS CAF provides a clear roadmap for cloud adoption within your organisation and places a heavy focus on the need to adapt your culture to take full advantage of the cloud. The need to adapt processes and invest in training cannot be understated
+<img src="./aws-caf-value-chain.png" alt="AWS CAF Value Chain" style="height: 400px;"/>
+
+The AWS CAF provides a clear roadmap for cloud adoption within your organisation and places a heavy focus on the need to adapt your culture to take full advantage of the cloud. The need to adapt processes and invest in training cannot be understated to ensure that you build the right teams from external hires or internal up-skilling who are set up for success. They need to technically deliver your migration and operational capability, but also promote ways of working and help teams who may have only worked with on-premises servers for the last 15 or more years. Cloud Adoption should not simply be about hiring a load of new team members who lack the historical context of the organisation as this will introduce an 'us and them' culture. Instead this needs to be a fine balance between adapting existing roles, hiring new talent and leveraging partner support for acceleration and tiger-teaming.
 
 To get a better understanding of your cloud readiness, you can take this intuative assessment which will score your answers against a cloud adoption baseline then provide recommendations on areas for focus and improvement: https://cloudreadiness.amazonaws.com/#/cart
+
+The AWS Cloud Migration Journey has three different phases:
+
+* **Assess** - The first phase of a cloud migration begins with a cloud readiness assessment of your enterprise’s current state. These assessment tasks give you a clear picture of what you will migrate, as well as a business case for migration and total cost of ownership (TCO) analysis for migration.
+* **Mobilise** - With a strong understanding of your current state and your portfolio along with the solid business case, you develop in the assessment phase, you can demonstrate the value of the cloud to your organisation.
+* **Migrate and Modernise** - The migrate phase uses the patterns, processes, tools, resources, and methodology defined and tested during the mobilise phase to migrate applications at scale. After using the best practices and lessons learned from the earlier phases, you can implement a migration factory, a blueprint of scaling implementation and operations, through automation and agile delivery.
+
+<img src="./aws-migration-journey.png" alt="AWS Migration Journey" style="height: 400px;"/>
 
 ### Microsoft Azure
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue)
