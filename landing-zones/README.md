@@ -107,6 +107,36 @@ Aside from your core account vending and auditing capabilities, there are other 
 |**[AWS Systems Manager](https://aws.amazon.com/systems-manager)**|Management and Governance|AWS Systems Manager is a secure end-to-end management solution for resources on AWS and in multicloud and hybrid environments. AWS Systems Manager centralises many of your cloud ops capabilities such as patching, remote administration, application management, change management, operations and monitoring.|
 |**[AWS Service Catalog](https://aws.amazon.com/servicecatalog)**|Management and Governance|AWS Service Catalog lets you centrally manage your cloud resources to achieve governance at scale of your infrastructure as code (IaC) templates, written in CloudFormation or Terraform configurations. With AWS Service Catalog, you can meet your compliance requirements while making sure your customers can quickly deploy the cloud resources they need.|
 
+### Azure Landing Zone
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue)
+
+An Azure landing zone is an environment that follows key design principles across eight design areas. These design principles accommodate all application portfolios and enable application migration, modernization, and innovation at scale. An Azure landing zone uses subscriptions to isolate and scale application resources and platform resources. Subscriptions for application resources are called application landing zones, and subscriptions for platform resources are called platform landing zones.
+
+An Azure landing zone architecture is scalable and modular to meet various deployment needs. A repeatable infrastructure allows you to apply configurations and controls to every subscription consistently. Modules make it easy to deploy and modify specific Azure landing zone architecture components as your requirements evolve.
+
+<img src="./azure-lz-overview.svg" alt="Azure Landing Zone Design Overview" style="height: 600px;"/>
+
+Management groups provide a governance scope above subscriptions. You organise subscriptions into management groups; the governance conditions you apply cascade by inheritance to all associated subscriptions. Management groups give you enterprise-grade management at scale, no matter what type of subscriptions you might have. You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management.
+
+<img src="./azure-mg-org.png" alt="Azure Management Group Example" style="height: 300px;"/>
+
+[Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) is used for centralising the guardrails within your landing zone and can be used for enforcing how resources are used and also the taxonomy (tags) which have to be configured. Resources which are in a non-compliant state can be remediated to the desired state depending on the policy which is breached. 
+
+Microsoft Defender for Cloud is the centralised tool which allows you to apply best practice security benchmarks to your subscriptions, then to report on required remediations. Baselines available include CIS, NIST and the Microsoft Cloud Security Benchmark (MCSB). The MCSB provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multi-cloud environment. Security is at the core of the Azure landing zone acceleratorand as part of the implementation, many tools and controls are deployed to help organisations quickly achieve a security baseline.
+
+|Service Name|Category|Capability|
+|---|---|---|
+|**[Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)**|Security and Compliance|Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) with a set of security measures and practices designed to protect cloud-based applications from various cyber threats and vulnerabilities.|
+|**[Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview)**|Log Aggregation|Microsoft Sentinel is a scalable, cloud-native solution providing Security information and event management (SIEM) and Security orchestration, automation, and response (SOAR) capabilities. Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames. Microsoft Sentinel natively incorporates proven Azure services, like Log Analytics and Logic Apps. Microsoft Sentinel enriches your investigation and detection with AI. It provides Microsoft's threat intelligence stream and enables you to bring your own threat intelligence.|
+|**[Azure DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)**|Networking and Content Delivery|Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.|
+
+### Google Cloud Landing Zone
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue)
+
+Landing zones help your enterprise deploy, use, and scale Google Cloud services more securely. Landing zones are dynamic and grow as your enterprise adopts more cloud-based workloads over time. A landing zone spans multiple areas and includes different elements, such as identities, resource management, security, and networking.
+
+<img src="./gcp-landing-zone-design-overview.svg" alt="Google Cloud Landing Zone Design Overview" style="height: 600px;"/>
+
 ## Further Reading
 
 #### [Reaching Cloud Velocity: A Leader's Guide to Success in the AWS Cloud](https://amzn.to/3QqW36D)
