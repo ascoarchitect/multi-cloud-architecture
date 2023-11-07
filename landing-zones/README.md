@@ -31,6 +31,10 @@ During the Assess phase, there will be an analysis conducted of the servers and 
 
 <img src="./aws-migration-journey.png" alt="AWS Migration Journey" style="height: 400px;"/>
 
+The Mobilise will focus on the people, platform, portfolio and migrate elements of the migration journey. For the people perspective, an upskilling capability will be introduced into the business to provide virtual or instructor-delivered training to key teams in response to the skills gap assessment carried out during Assess. The new landing zone and operating model will be designed to meet the compliance and operational needs of the business. This essentially establishes the key foundations for the migration prior to the next phase where a 'migration factory' approach is taken to migrate your applications efficiently and effectively.
+
+Migrate and Modernise is the final phase where you now accelerate your transformation. You have teams trained to start supporting applications in the cloud, your landing zone is deployed and configured to meet all of your organisation's security and compliance needs, and the business case for migration has been approved and ratified for each application that is in-scope. This will also be the phase where certain applications are decommissioned (sunsetted) and replaced with new capabiilties born in the cloud.
+
 You can download a full copy of the AWS Cloud Adoption Framework via the link in the [Further Reading](./README.md#further-reading) section below.
 
 ### Microsoft Azure
