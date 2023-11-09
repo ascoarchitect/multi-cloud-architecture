@@ -23,7 +23,8 @@ technicalauthors
 infraadmins
 databaseadmins
 CODEOWNERS
-your-org
+your
+org
 infra
 docs
 sql
