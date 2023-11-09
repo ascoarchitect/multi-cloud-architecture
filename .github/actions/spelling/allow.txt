@@ -5,6 +5,7 @@ ubuntu
 workarounds
 KPIs
 SREs
+SMEs
 MCSB
 IPAM
 OUs
@@ -21,8 +22,16 @@ TCO
 technicalauthors
 infraadmins
 databaseadmins
+CODEOWNERS
 your-org
 infra
 docs
 sql
 Entra
+webp
+Grafana
+Loki
+Pyroscope
+Jaeger
+Postman
+Prometheus
