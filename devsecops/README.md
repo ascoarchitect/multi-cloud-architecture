@@ -122,6 +122,16 @@ Finally, configure a branch protection rule in your settings to require a pull r
 
 <img src="./branch-protection.png" alt="Branch Protection" style="height: 400px;"/>
 
+## Licensing
+
+Having worked really hard to develop your work, you'd like to think that you get a reference for where that code is used or adapted. This is the same for open-source code or packages that you consume as part of your project; it's important to get used to declaring the licenses which are in play within your solution. For other developer's work that you include in your project, add this to a README.md file at the root of your project giving attribution where it's required.
+
+This is really easy to implement for your own work and contributions by creating a file in the root of your project called LICENSE.
+
+<img src="./license-tool.webp" alt="License Tool" style="height: 200px;"/>
+
+Most version control platforms will auto-recognise this file and generally provide you with templates which can be used for your product. Find out more about the licenses available here: https://choosealicense.com/.
+
 ## Recommended Tools for DevSecOps and Operations
 
 Most of the tools below use the declarative languages YAML or JSON, so it's recommended to become familiar with how to structure these languages to make it easier to understand the required structure and diagnose issues with deployments.
