@@ -118,9 +118,35 @@ You can find out how to configure your pull request template in the documentatio
 
 Using Github as an example, you create a folder in the root of your project called ".github" and create a markdown file in that folder called "pull_request_template.md".
 
-Finally, configure a branch protection rule in your settings to require a pull request and for a minimum number of approvers which are required before a merge request can be raised.
+Finally, configure a branch protection rule in your settings to require a pull request and for a minimum number of approvers which are required before a merge request can be raised. In general, this should be two developers, but it will depend on your size of team and what is appropriate for your scenario.
 
 <img src="./branch-protection.png" alt="Branch Protection" style="height: 400px;"/>
+
+It's also possible to add further granularity through the use of a CODEOWNERS file added to the root of your project. This provides the ability to delegate the approval of content based on a set of rules which might include file path or file type. Think about the example of where an application is being developed which is a full-stack solution. You might want to delegate out the approval or terraform files to your cloud infra team for peer reviewing, your database configurations to your database SMEs and your technical documention markdown to your technical authors.
+
+Using this example, here's what your CODEOWNERS file might look like:
+
+```
+# CODEOWNERS file for Application ABC
+# ------------------------------------
+#
+@owner-1 @owner2                  # these user accounts would be the default owners for all content
+#                                 # in the repo where there isn't another rule which takes precidence
+#
+*.md @your-org/technicalauthors   # this would require members of the technicalauthors to
+#                                 # review and approve all markdown files
+#
+*.sql @your-org/databaseadmins    # this would require members of the technicalauthors to
+#                                 # review and approve all SQL database files
+#
+infra/* @your-org/infraadmins     # this would require members of the technicalauthors to
+#                                 # review and approve all files such as terraform in the infra/ directory
+#
+docs/* @technical-author-1        # this would require the technical-author-1 user account to
+#                                 # review and approve all files in the docs/ directory
+```
+
+Other examples of configuring code owners in your repository can be found here: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 ## Licensing
 
