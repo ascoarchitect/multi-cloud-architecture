@@ -14,6 +14,7 @@ CNAPP
 HIPAA
 CSPM
 CCoE
+CCo
 sunsetted
 upskilling
 TCO
@@ -24,3 +25,4 @@ your-org
 infra
 docs
 sql
+Entra
