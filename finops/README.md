@@ -43,7 +43,7 @@ FinOps is an iterative process, much like Agile and DevOps where you gather data
 
 ## It's All About Culture
 
-When you are at the crawl phase of FinOps adoption, it will be likely that the FinOps team will be heavily involved with driving conversations and explaining some of the terms which are common across technology and finance. Some teams will ace understanding balance sheets, amortized costs and depreciation, and others will be masters at EC2 instance types, spot instances, auto-scaling groups and Grafana. It's important therefore to focus on establishing a common language which all teams can understand and relate to. This language should then be linked to busines value and outcomes so everyone can relate to the intention of FinOps and what it means to them.
+When you are at the crawl phase of FinOps adoption, it will be likely that the FinOps team will be heavily involved with driving conversations and explaining some of the terms which are common across technology and finance. Some teams will ace understanding balance sheets, amortized costs and depreciation, and others will be masters at EC2 instance types, spot instances, auto-scaling groups and Grafana. It's important therefore to focus on establishing a common language which all teams can understand and relate to. This language should then be linked to business value and outcomes so everyone can relate to the intention of FinOps and what it means to them.
 
 Drawing out the backgrounds, experiences, motivations and biases from these various stakeholder groups will be important, so everyone knows the direction that is being taken and can gain support for filling any knowledge gaps where required.
 
