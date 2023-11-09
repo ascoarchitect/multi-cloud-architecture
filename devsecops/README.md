@@ -12,7 +12,7 @@ I'm going to include a specific section on Terraform here, because I can't empha
 
 There are three phases to developing Terraform, including writing the configuration files, planning your deployment then applying your code.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/terraform-approach.png" alt="Terraform Approach" style="height: 400px;"/>
+<img src="./terraform-approach.png" alt="Terraform Approach" style="height: 400px;"/>
 
 The plan phase allows you to see the changes that your code will make to an environment before it is applied, therefore you can quickly spot any issues before they become irreversible. When it comes to 'applying' your changes using terraform apply, I have come across developers who skip the plan phase and just run ```terraform apply -auto-approve``` which just deploys the code without any checks or warning. Now, whilst there are cases where -auto-approve is used, such as in a pipeline task for automated deployment, these are always preceded with a plan phase where validation can be carried out. We're all human and prone to mistakes - see it as an advantage rather than an annoying delay.
 
@@ -28,7 +28,7 @@ Hopefully after reading this section, you'll get a feel for why I chose to give 
 
 Think about this as an example: The Information Security team are concerned about the risk of a developer accidentally (or unfortunately in rare cases, intentionally) committing credentials into a repository which is then published into the application or public resource. Of course, the risk is that a hacker could obtain these credentials and either launch an attack on the platform or sell the credentials to a number of rather unsavoury actors. Taking the human validation approach would mean that all code would need to be checked manually for credentials and signed off by the information security team. The obvious problem here is that this then promotes that team to a bottleneck which will ultimately lead to reduced throughput (or increased cycle time) for each release.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/credential-scan.png" alt="Credential Scanning" style="height: 300px;"/>
+<img src="./credential-scan.png" alt="Credential Scanning" style="height: 300px;"/>
 
 Introducing the pipeline. Rather than manually checking code, you create a CI task which automatically scans all the code for known 'patterns' and rejects a code commit if it finds anything that matches. The information security team can still monitor the tool and even carry out spot checks, but what this now means is that a developer can work much faster, and safe in the knowledge that their code and human errors are being checked over by one of a series of pipeline checks.
 
@@ -61,7 +61,7 @@ As the name describes, the pre-commit framework encompasses a series of tests wh
 
 Pre-commit is configured using a static YAML file which defines the tests which are carried out, and also which ones must pass to allow the commit to take place. The developer installs the pre-commit hooks which installs all the required test packages on their machine, allowing tests to run in that environment. The framework supports a number of different languages, and in some cases can automatically remediate findings for the developer.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/devsecops/pre-commit.png" alt="Credential Scanning" style="height: 300px;"/>
+<img src="./pre-commit.png" alt="Credential Scanning" style="height: 300px;"/>
 
 You can find out more about pre-commit and how you might benefit from introducing it into your workflow [here](https://pre-commit.com/).
 
@@ -117,6 +117,10 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 You can find out how to configure your pull request template in the documentation for your platform.
 
 Using Github as an example, you create a folder in the root of your project called ".github" and create a markdown file in that folder called "pull_request_template.md".
+
+Finally, configure a branch protection rule in your settings to require a pull request and for a minimum number of approvers which are required before a merge request can be raised.
+
+<img src="./branch-protection.png" alt="Branch Protection" style="height: 400px;"/>
 
 ## Recommended Tools for DevSecOps and Operations
 
