@@ -12,9 +12,9 @@ This repository is licensed under GNU GPLv3. Find out more about this license [h
 
  -  **[AI/ML and Generative AI](./aiml-and-generativeai/README.md)**
  -  **[Certifications and Training](./certifications-and-training/README.md)**
+ -  **[Cloud Adoption and Landing Zones](./cloud-adoption-and-landing-zones/README.md)**
  -  **[DevSecOps](./devsecops/README.md)**
  -  **[FinOps](./finops/README.md)**
- -  **[Landing Zones](./landing-zones/README.md)**
  -  **[Multi-Cloud Service Comparison](./multi-cloud-service-comparison/README.md)**
  -  **[Security](./security/README.md)**
  -  **[Sustainability](./sustainability/README.md)**
