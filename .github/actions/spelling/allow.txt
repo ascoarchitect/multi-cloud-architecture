@@ -5,3 +5,9 @@ ubuntu
 workarounds
 KPIs
 SREs
+MCSB
+IPAM
+OUs
+gcp
+SIEM
+CNAPP
