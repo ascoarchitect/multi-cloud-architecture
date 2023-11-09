@@ -147,7 +147,7 @@ Reaching Cloud Velocity provides leadership best practices covering the most req
 * Aligning business and technology strategy to benefit from cloud
 * Re-skilling and scaling your cloud fluency
 * Setting the right culture and organization model to attract and retain engineering talent
-* How to migrate data centres to AWS while holistically benefitting from the improved availability, security, and governance it can offer.
+* How to migrate data centres to AWS while holistically benefiting from the improved availability, security, and governance it can offer.
 
 The book also goes deeper into how leaders can leverage the inherent reliability and durability of the AWS Cloud, and how compute, containers, serverless, APIs, microservices, database, analytics, and machine learning have evolved into a set of highly resilient, secure, and scalable building blocks - allowing builders to innovate at a fraction of the costs they would have typically come to expect.
 
