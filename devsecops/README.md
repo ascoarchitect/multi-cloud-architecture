@@ -75,6 +75,49 @@ There are a huge number of out-of-the-box pre-commit hooks which are available t
 
 Check out the pre-commit hook list [here](https://pre-commit.com/hooks.html) but also remember that this is not an exhaustive list. You can find out whether your tool provider has pre-commit hooks within their documentation, however, if they already provide tools for use within the CI pipeline, then you'll generally find that there is a pre-commit hook available.
 
+## Pull Requests
+
+When you create a pull request, it's your opportunity to tell all your peers about the amazing work that you've done - be it a bug fix (who likes bugs!) or a killer new feature which is going to wow your customers and users. To make sure that your changes have the impact that you're hoping for, it's important to provide details of what has changed and also reach out to your nearest and dearest to verify that you've not left any mistakes - we're all human after all. Whilst not mandatory, it's recommended to configure a template which auto-populates the content of a pull request which your developers can simply complete which introduces a standard and makes sure that nothing is missed.
+
+Here's an example markdown file which is added to your repository configuration:
+
+```
+# Description
+
+Please include a summary of the changes and the related issue. Please also include relevant motivation and context. List any dependencies that are required for this change.
+
+Fixes # (Jira ticket number)
+
+## Type of change
+
+Please delete options that are not relevant.
+
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] This change requires a documentation update
+
+# How Has This Been Tested?
+
+Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
+
+# Checklist:
+
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have not bypassed any pre-commit checks and all checks have passed without error
+- [ ] My code complies with naming and file structure standards
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] Any dependent changes have been merged and published in downstream modules
+```
+
+You can find out how to configure your pull request template in the documentation for your platform.
+
+Using Github as an example, you create a folder in the root of your project called ".github" and create a markdown file in that folder called "pull_request_template.md".
+
 ## Recommended Tools for DevSecOps and Operations
 
 Most of the tools below use the declarative languages YAML or JSON, so it's recommended to become familiar with how to structure these languages to make it easier to understand the required structure and diagnose issues with deployments.
