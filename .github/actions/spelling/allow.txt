@@ -11,3 +11,16 @@ OUs
 gcp
 SIEM
 CNAPP
+HIPAA
+CSPM
+CCoE
+sunsetted
+upskilling
+TCO
+technicalauthors
+infraadmins
+databaseadmins
+your-org
+infra
+docs
+sql
