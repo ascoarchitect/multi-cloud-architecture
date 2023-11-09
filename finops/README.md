@@ -24,11 +24,11 @@ The specific KPIs used are part of the discovery and deliverables that make up F
 
 ## FinOps Framework
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/finops-framework.png" alt="FinOps Framework" style="height: 400px;"/>
+<img src="./finops-framework.png" alt="FinOps Framework" style="height: 400px;"/>
 
 The FinOps framework defines three phases which describe the maturity of an organisation's approach to FinOps. It's also highlighted that no single phase is necessarily better than anothwer, but instead should be catered for a situation. In the Run phase for example, you would expect an organisation to be utilising reserved instances (RI), savings plans or optimised spending when the project may be in the inception phase and exploring the use of serverless, where it's difficult to forecast the levels of compute or services required. Instead, you might take a crawl approach which allows the project to hone its focus on where it wants to get, but implement good principles which can be revised at a later time.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/finops-lifecycle.png" alt="FinOps Lifecycle" style="height: 300px;"/>
+<img src="./finops-lifecycle.png" alt="FinOps Lifecycle" style="height: 300px;"/>
 
 FinOps is an iterative process, much like Agile and DevOps where you gather data, analyse and enrich to provide information then make change decisions and implement, then gather more data on the effects of those changes. When you tie together the maturity phases with the lifecycle approach, your FinOps team, engineers and wider organisation will quickly improve its awareness of best practices and what works best. This will lead to more frequent and less individually impactful decisions as teams develop a 'muscle memory'.
 
@@ -79,11 +79,11 @@ As the reader, I hope that you haven't just jumped down to this section to find 
 
 To assist with this, I would encourage you to firstly look at the native tools available in each of your cloud platforms in use to get a feel for the data which is generated. Next, you'll need to have tagged all your accounts and resources so it's much easer to group the data points together in your tool of choice.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/aws-cost-explorer.png" alt="AWS Cost Explorer" style="height: 400px;"/>
+<img src="./aws-cost-explorer.png" alt="AWS Cost Explorer" style="height: 400px;"/>
 
 Using [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) which is a free tool available on the AWS Console, you are able to filter all your costs using built-in categories and the tags which you have set on resources. This will allow you to quickly validate the costs for a set of resources by cost centre, environment, project or whatever is specific to your organisation. Getting your tagging agreed between the different personas then implemented before introducing any additional tools will allow you to understand the reports and recommendations which are generated.
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/cloud-intelligence-dashboard.png" alt="Cloud Intelligence Dashboard" style="height: 400px;"/>
+<img src="./cloud-intelligence-dashboard.png" alt="Cloud Intelligence Dashboard" style="height: 400px;"/>
 
 AWS Well-Architected Labs has a series of Cloud Intelligence dashboards which allow you to connect Grafana to your cost reporting data and gain instant insights across your organisation. Find out more here: https://www.wellarchitectedlabs.com/cloud-intelligence-dashboards/
 
@@ -96,7 +96,7 @@ AWS Well-Architected Labs has a series of Cloud Intelligence dashboards which al
 
 This is not in any way a definitive list. Find out more about the selection of FinOps Certified Platforms here: https://www.finops.org/landscape/?prod_TOOLS_SERVICES%5BrefinementList%5D%5Bcertifications%5D%5B0%5D=FinOps%20Certified%20Platform
 
-<img src="https://github.com/ascoarchitect/multi-cloud-architecture/blob/main/finops/finops-certified-platform.png" alt="FinOps Certified Platforms" style="height: 100px;"/>
+<img src="./finops-certified-platform.png" alt="FinOps Certified Platforms" style="height: 100px;"/>
 
 ## Further Reading
 
