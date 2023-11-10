@@ -36,7 +36,7 @@ Compute services on the cloud are often the first place that many organisations 
 
 AWS has a large number of compute services which are designed to meet the many needs of customers far beyond simply providing a means of running virtual machines. Within the EC2 portfolio, there are also a wide range of specific instance types which are custom built by AWS to provide capabilities such as low-cost high-performance ARM processing with the Graviton3 chipset, M1 Mac chipsets for developers writing MacOS applications and deep learning instances which are intended for machine learning requirements.
 
-Below is a non-exhaustive list of instance types available on EC2:
+Below is a non-exhaustive list of specialist instance types available on EC2:
 
 |Instance Type|Capability|
 |---|---|
@@ -110,6 +110,22 @@ Find out more about all the AWS Compute services which are available [here](http
 |Virtual Machines|Provision Windows and Linux virtual machines in seconds|[Amazon EC2](./compute.md#Amazon-Web-Services)|[Compute Engine](./compute.md#Google-Cloud-Services)|
 |VM Scale Sets|Manage and scale up to thousands of Linux and Windows virtual machines|[Amazon EC2 Auto Scaling](./compute.md#Amazon-Web-Services)|[Compute Engine Autoscaler](./compute.md#Google-Cloud-Services)|
 
+### Highlight Points
+
+#### SAP HANA
+
+SAP HANA is a high performance multi-modal database platform that operates at lightning speed by processing transactions in memory. This lets companies process massive amounts of data with near-zero latency, query data in an instant, and become truly data-driven. With the move to cloud from a traditional on-premises architecture pattern, SAP is now bringing AI to the platform reinforcing their position as a world leader for enterprise resource planning (ERP).
+
+Why is this important to highlight? Azure, like other hyperscalers have specific E Series instance types which are optimised for heavy in-memory applications such as SAP HANA. This allows customers to deploy their strategic applications on the same cloud as their SAP HANA platform to allow integration within the same cloud organisation.
+
+<img src="./sap-azure-integration.png" alt="SAP on Azure Integration" style="height: 200px;"/>
+
+With Azure, organizations can integrate their SAP and non-SAP data through an extensive portfolio of Azure data services and create real-time dashboard views of the current operations using SAP and Microsoft business intelligence tools including Microsoft Power Automate, Power Apps and Power BI.
+
+#### Deep Learning and Rendering
+
+For simulation, deep learning, graphics rendering, video editing, gaming and remote visualisation workloads, Azure has their N Series GPU-enabled virtual machines equipped with NVIDIA Tesla-series GPUs allowing users to move their traditional on-premises workflows into the cloud. This provides resillience and the ability to scale up or scale out their processing and reduce the time it would have taken to process rendering and computation on self-managed hardware. This capability extends across their desktop-as-a-service (DaaS) and server-based workloads.
+
 Huge shout out to [Alexy Polkovnikov](https://www.linkedin.com/in/alexeypolkovnikov/) for his Azure Services resource which breaks down the latest list and a clear description for each service. Check it out [here](https://azurecharts.com/overview).
 
 Access the latest official list of Azure compute services [here](https://azure.microsoft.com/en-gb/products#compute).
@@ -132,6 +148,8 @@ Access the latest official list of Azure compute services [here](https://azure.m
 |SAP on Google Cloud|Run SAP on Google Cloud.|[SAP on AWS](./compute.md#Amazon-Web-Services)|[SAP on Azure](./compute.md#Azure-Services)|
 |App Engine|Build highly scalable applications on a fully managed serverless platform.|[AWS Lambda, AWS Fargate, AWS App Runner](./compute.md#Amazon-Web-Services)|[Azure App Service](./compute.md#Azure-Services)|
 |VMware Engine|Migrate and run your VMware workloads on Google Cloud.|[VMware Cloud on AWS](./compute.md#Amazon-Web-Services)|[Azure VMware Solution](./compute.md#Azure-Services)|
+
+### Highlight Points
 
 Find out more about the latest Google Cloud services comparison between AWS and Azure here: https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison
 
