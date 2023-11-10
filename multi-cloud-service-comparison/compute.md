@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Compute services on the cloud are often the first place that many organisations look for hosting requirements. This is likely because of the typical use of a datacentre for hosting servers and virtual machines in a private cloud. All three public cloud providers which are covered in this resource have a robust offering of standard and niche compute services to meet almost all of customer needs. As with many cloud services, it's important to recognise that these offerings are always growing, especially with some providers now offering bespoke chipsets to beat the performance, cost and sustainability capabilities of traditional Intel and AMD chipsets.
+
 ## AWS Services
 
 |Service|Description|Azure Service|Google Cloud Service|
