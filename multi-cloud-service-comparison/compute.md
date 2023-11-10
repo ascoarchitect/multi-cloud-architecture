@@ -6,25 +6,29 @@ Compute services on the cloud are often the first place that many organisations 
 
 ## AWS Services
 
+**Follow the AWS Services link at the bottom of this section for the latest list of services**
+
 |Service|Description|Azure Service|Google Cloud Service|
 |---|---|---|---|
 |Amazon EC2|Virtual servers in the cloud|[Azure Virtual Machine](./compute.md#Azure-Services)|[Google Compute Engine](./compute.md#Google-Cloud-Services)|
 |Amazon EC2 Auto Scaling|Scale compute capacity to meet demand|[Azure Autoscale](./compute.md#Azure-Services)|[Google Auto Scaler](./compute.md#Google-Cloud-Services)|
 |Amazon Lightsail|Launch and manage virtual private servers|[Azure App Service Environment](./compute.md#Azure-Services)|-|
-|AWS App Runner|Production web applications at scale made easy for developers|[Azure Container Apps](./compute.md#Azure-Services)|[Google Cloud Run](./compute.md#Google-Cloud-Services)
+|AWS App Runner|Production web applications at scale made easy for developers|[Azure Container Apps](./compute.md#Azure-Services)|[Google Cloud Run](./compute.md#Google-Cloud-Services)|
 |AWS Auto Scaling|Scale multiple resources to meet demand|-|-|
-|AWS Batch|Run batch jobs at any scale|[Azure Batch](./compute.md#Azure-Services)|[Google Preemptible VMs](./compute.md#Google-Cloud-Services)
-|AWS Compute Optimizer|Identify optimal AWS Compute resources|[Azure Advisor](./compute.md#Azure-Services)|[Google Cloud Platform Security](./compute.md#Google-Cloud-Services)
-|AWS Elastic Beanstalk|Run and manage web apps|[Azure Web Apps](./compute.md#Azure-Services)<br/>[Azure Cloud Services](./compute.md#Azure-Services)|[Google App Engine](./compute.md#Google-Cloud-Services)
-|AWS Lambda|Run code without thinking about servers|[Azure Functions](./compute.md#Azure-Services)|[Google Cloud Functions](./compute.md#Google-Cloud-Services)
+|AWS Batch|Run batch jobs at any scale|[Azure Batch](./compute.md#Azure-Services)|[Google Preemptible VMs](./compute.md#Google-Cloud-Services)|
+|AWS Compute Optimizer|Identify optimal AWS Compute resources|[Azure Advisor](./compute.md#Azure-Services)|[Google Cloud Platform Security](./compute.md#Google-Cloud-Services)|
+|AWS Elastic Beanstalk|Run and manage web apps|[Azure Web Apps](./compute.md#Azure-Services)<br/>[Azure Cloud Services](./compute.md#Azure-Services)|[Google App Engine](./compute.md#Google-Cloud-Services)|
+|AWS Lambda|Run code without thinking about servers|[Azure Functions](./compute.md#Azure-Services)|[Google Cloud Functions](./compute.md#Google-Cloud-Services)|
 |AWS Lambda SnapStart|Achieve up to 10x faster Java function startup times|-|-|
 |AWS Local Zones|Run latency sensitive applications closer to end users|-|-|
-|AWS Outposts|Run AWS infrastructure on-premises|[Azure Stack](./compute.md#Azure-Services)|[Google Anthos](./compute.md#Google-Cloud-Services)
+|AWS Nitro Enclaves|Create additional isolation to further protect highly sensitive data within EC2 instances|[Azure Dedicated Host](./compute.md#Azure-Services)|[Sole Tenant Node](./compute.md#Google-Cloud-Services)|
+|AWS Outposts|Run AWS infrastructure on-premises|[Azure Stack](./compute.md#Azure-Services)|[Google Anthos](./compute.md#Google-Cloud-Services)|
+|AWS Parallel Cluster|An open source cluster management tool that makes it easy for you to deploy and manage High Performance Computing (HPC) clusters on AWS|[Azure CycleCloud](./README.md#Azure-Services)|-|
 |AWS Serverless Application Repository|Discover, deploy, and publish serverless applications|-|-|
 |AWS SimSpace Weaver|Build dynamic, large-scale spatial simulations on AWS managed infrastructure|-|-|
 |AWS Wavelength|Deliver ultra-low latency applications for 5G devices|[Azure Edge Zones](./compute.md#Azure-Services)|-|
-|VMware Cloud on AWS|Build a hybrid cloud without custom hardware|[Azure VMWare Solution](./compute.md#Azure-Services)|[Google Cloud VMware Engine](./compute.md#Google-Cloud-Services)
-|Amazon EC2 Image Builder|Build and maintain secure images|[Azure VM Image Builder](./compute.md#Azure-Services)|[Google Cloud Build](./compute.md#Google-Cloud-Services)
+|VMware Cloud on AWS|Build a hybrid cloud without custom hardware|[Azure VMWare Solution](./compute.md#Azure-Services)|[Google Cloud VMware Engine](./compute.md#Google-Cloud-Services)|
+|Amazon EC2 Image Builder|Build and maintain secure images|[Azure VM Image Builder](./compute.md#Azure-Services)|[Google Cloud Build](./compute.md#Google-Cloud-Services)|
 
 ### Highlight Points
 
@@ -83,4 +87,52 @@ Find out more about all the AWS Compute services which are available [here](http
 
 ## Azure Services
 
+**Follow the Azure Services link at the bottom of this section for the latest list of services**
+
+|Service|Description|AWS Service|Google Cloud Service|
+|---|---|---|---|
+|App Service|Quickly create powerful cloud apps for web and mobile|[AWS Lambda, AWS Fargate, AWS App Runner](./compute.md#Amazon-Web-Services)|[App Engine](./compute.md#Google-Cloud-Services)|
+|Azure Batch|Cloud-scale job scheduling and compute management|[AWS Batch](./compute.md#Amazon-Web-Services)|[Dataproc](./compute.md#Google-Cloud-Services)|
+|Azure Functions|Process events with serverless code|[AWS Lambda](./compute.md#Amazon-Web-Services)|[Cloud Functions](./compute.md#Google-Cloud-Services)|
+|Azure Quantum|Experience quantum impact today on Azure|[Amazon Bracket](./compute.md#Amazon-Web-Services)|-|
+|Azure Red Hat OpenShift|Fully managed OpenShift service, jointly operated with Red Hat|[Red Hat OpenShift Service on AWS](./compute.md#Amazon-Web-Services)|-|
+|Azure Spring Apps|A fully managed Spring Cloud service, built and operated with Pivotal|[Spring Cloud for AWS](./compute.md#Amazon-Web-Services)|-|
+|Azure VMware Solution|Run your VMware workloads natively on Azure|[VMWare Cloud on AWS](./compute.md#Amazon-Web-Services)|[VMWare Engine](./compute.md#Google-Cloud-Services)|
+|Cloud Services|Create highly-available, infinitely-scalable cloud applications and APIs|[AWS Elastic Beanstalk](./compute.md#Amazon-Web-Services)|[Google App Engine](./compute.md#Google-Cloud-Services)|
+|Container Apps|Build and deploy modern apps and microservices using serverless containers|[AWS App Runner](./compute.md#Amazon-Web-Services)|[Google Cloud Run](./compute.md#Google-Cloud-Services)|
+|Container Instances|Easily run containers on Azure without managing servers|[Amazon ECS, Amazon EKS, Bottlerocket](./compute.md#Amazon-Web-Services)|[Kubernetes Engine](./compute.md#Google-Cloud-Services)|
+|Container Registry|Store and manage container images across all types of Azure deployments|[Amazon ECR](./compute.md#Amazon-Web-Services)|[Artifact Registry](./compute.md#Google-Cloud-Services)|
+|CycleCloud|Create, manage, operate, and optimize HPC and big compute clusters of any scale|[Parallel Cluster](./compute.md#Amazon-Web-Services)|-|
+|Dedicated Host|A dedicated physical server to host your Azure VMs for Windows and Linux|[Amazon EC2 Dedicated Host, AWS Nitro Enclaves](./compute.md#Amazon-Web-Services)|[Sole Tenant Node](./compute.md#Google-Cloud-Services)|
+|Kubernetes Service|Simplify the deployment, management, and operations of Kubernetes|[Amazon AKS](./compute.md#Amazon-Web-Services)|[Kubernetes Engine](./compute.md#Google-Cloud-Services)|
+|Service Fabric|Develop microservices and orchestrate containers on Windows or Linux|[AWS Lambda](./compute.md#Amazon-Web-Services)|[Google Cloud Functions, EventArc](./compute.md#Google-Cloud-Services)|
+|Virtual Desktop|Deliver a virtual desktop experience to any device at cloud scale|[Amazon Workspaces](./compute.md#Amazon-Web-Services)|-|
+|Virtual Machines|Provision Windows and Linux virtual machines in seconds|[Amazon EC2](./compute.md#Amazon-Web-Services)|[Compute Engine](./compute.md#Google-Cloud-Services)|
+|VM Scale Sets|Manage and scale up to thousands of Linux and Windows virtual machines|[Amazon EC2 Auto Scaling](./compute.md#Amazon-Web-Services)|[Compute Engine Autoscaler](./compute.md#Google-Cloud-Services)|
+
+Huge shout out to [Alexy Polkovnikov](https://www.linkedin.com/in/alexeypolkovnikov/) for his Azure Services resource which breaks down the latest list and a clear description for each service. Check it out [here](https://azurecharts.com/overview).
+
+Access the latest official list of Azure compute services [here](https://azure.microsoft.com/en-gb/products#compute).
+
 ## Google Cloud Services
+
+**Follow the Google Cloud Services link at the bottom of this section for the latest list of services**
+
+|Service|Description|AWS Service|Azure Service|
+|---|---|---|---|
+|Cloud GPUs|Train and run machine learning models faster than before.|[Amazon Elastic Compute Cloud (EC2) P3](./compute.md#Amazon-Web-Services)|[GPU Optimized VMs](./compute.md#Azure-Services)|
+|Cloud TPU|Train and run machine learning models faster than ever before.|[AWS UltraClusters](./compute.md#Amazon-Web-Services)|[Azure Virtual Machine](./compute.md#Azure-Services)|
+|Compute Engine|Accelerate your digital transformation with high-performance VMs.|[Amazon Elastic Compute Cloud (EC2)](./compute.md#Amazon-Web-Services)|[Azure Virtual Machines](./compute.md#Azure-Services)|
+|Compute Engine Autoscaler|Automatically add or delete VM instances from a managed instance group (MIG) based on increases or decreases in load.|[AWS EC2 Autoscaling](./compute.md#Amazon-Web-Services)|[Azure Autoscale, Virtual Machine Scale Sets](./compute.md#Azure-Services)|
+|OS Login|Manage SSH access to your instances using IAM without having to create and manage individual SSH keys.|[Amazon EC2 Instance Connect](./compute.md#Amazon-Web-Services)|-|	
+|Persistent Disk|Reliable, high-performance block storage for VM instances.|[Amazon Elastic Block Store (EBS)](./compute.md#Amazon-Web-Services)|[Azure Managed Disks](./compute.md#Azure-Services)|
+|SSH from the browser|Connect to a Compute Engine virtual machine (VM) instance using SSH with the Google Cloud console in your web browser.|[AWS EC2 Instance Connect](./compute.md#Amazon-Web-Services)|[Azure Bastion](./compute.md#Azure-Services)|
+|VM Manager|Manage operating systems for large virtual machine (VM) fleets running Windows and Linux on Compute Engine.|[AWS Systems Manager](./compute.md#Amazon-Web-Services)|-|
+|Sole-tenant nodes|Host your VMs on hardware dedicated only to your project.|[Amazon EC2 Dedicated Host](./compute.md#Amazon-Web-Services)|[Azure Dedicated Host](./compute.md#Azure-Services)|
+|SAP on Google Cloud|Run SAP on Google Cloud.|[SAP on AWS](./compute.md#Amazon-Web-Services)|[SAP on Azure](./compute.md#Azure-Services)|
+|App Engine|Build highly scalable applications on a fully managed serverless platform.|[AWS Lambda, AWS Fargate, AWS App Runner](./compute.md#Amazon-Web-Services)|[Azure App Service](./compute.md#Azure-Services)|
+|VMware Engine|Migrate and run your VMware workloads on Google Cloud.|[VMware Cloud on AWS](./compute.md#Amazon-Web-Services)|[Azure VMware Solution](./compute.md#Azure-Services)|
+
+Find out more about the latest Google Cloud services comparison between AWS and Azure here: https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison
+
+Access the latest official list of Google Cloud compute services [here](https://cloud.google.com/products#section-5).
