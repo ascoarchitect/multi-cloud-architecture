@@ -6,6 +6,8 @@ Compute services on the cloud are often the first place that many organisations 
 
 ## AWS Services
 
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-AWS-orange)
+
 **Follow the AWS Services link at the bottom of this section for the latest list of services**
 
 |Service|Description|Azure Service|Google Cloud Service|
@@ -87,6 +89,8 @@ Find out more about all the AWS Compute services which are available [here](http
 
 ## Azure Services
 
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Azure-lightblue)
+
 **Follow the Azure Services link at the bottom of this section for the latest list of services**
 
 |Service|Description|AWS Service|Google Cloud Service|
@@ -131,6 +135,8 @@ Huge shout out to [Alexy Polkovnikov](https://www.linkedin.com/in/alexeypolkovni
 Access the latest official list of Azure compute services [here](https://azure.microsoft.com/en-gb/products#compute).
 
 ## Google Cloud Services
+
+![Static Badge](https://img.shields.io/badge/Cloud%20Provider-Google%20Cloud-blue)
 
 **Follow the Google Cloud Services link at the bottom of this section for the latest list of services**
 
