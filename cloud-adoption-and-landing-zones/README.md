@@ -8,7 +8,7 @@ AWS, Microsoft Azure and Google Cloud each have their own design for an LZ on th
 
 ## Cloud Adoption
 
-Jump to: [Microsoft Azure](./README.md#microsoft-azure) [Google Cloud](./README.md#google-cloud)
+Jump to: [Microsoft Azure](./README.md#microsoft-azure) [Google Cloud](./README.md#google-cloud) | [Landing Zones](./README.md#landing-zones)
 
 ### Amazon Web Services
 ![Static Badge](https://img.shields.io/badge/Cloud%20Provider-AWS-orange)
