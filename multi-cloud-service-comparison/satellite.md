@@ -14,7 +14,7 @@ Launching new constellations into low-Earth orbit (LEO) and medium-Earth orbit (
 
 [AWS Ground Station](https://aws.amazon.com/ground-station) was the first service offering a 'satellite as a service' model for organisations needing to control satellites and ingest data directly into their AWS VPC without the need to be tied to heavy commercial contracts. With AWS Ground Station, you have direct access to AWS services and the AWS Global Infrastructure including a low-latency global fiber network. For example, you can use Amazon S3 to store the downloaded data, Amazon Kinesis Data Streams for managing data ingestion from satellites, and Amazon SageMaker for building custom machine learning applications that apply to your data sets.
 
-This service can provide customers with a saving of up to 80% compared to traditonal operational costs, and you only pay for the 'antenna time' that is used without any long-term commitments.
+This service can provide customers with a saving of up to 80% compared to traditional operational costs, and you only pay for the 'antenna time' that is used without any long-term commitments.
 
 <img src="./aws-groundstation-locations.png" alt="AWS Ground Station Locations" style="height: 300px;"/>
 
@@ -37,7 +37,7 @@ In October 2020, Microsoft announced a partnership with SpaceX Starlink which pr
 
 Microsoft currently operates 5 owned and operated ground station [locations](https://learn.microsoft.com/en-us/azure/orbital/about-ground-stations) with partner ground stations also available.
 
-Microsoft added the latest preview service into their Azure Space portfolio in September 2023, [Planetary Computer](https://planetarycomputer.microsoft.com/). Planetary Computer is a robust geospatial data platform. It combines a multi-petabyte catalog of global multi-source data with intuitive APIs, a flexible scientific environment that allows users to answer global questions about that data, and applications that put those answers in the hands of many stakeholders. It is used by researchers, scientists, students, and organizations across the globe with millions of API calls every month.
+Microsoft added the latest preview service into their Azure Space portfolio in September 2023, [Planetary Computer](https://planetarycomputer.microsoft.com/). Planetary Computer is a robust geo-spatial data platform. It combines a multi-petabyte catalog of global multi-source data with intuitive APIs, a flexible scientific environment that allows users to answer global questions about that data, and applications that put those answers in the hands of many stakeholders. It is used by researchers, scientists, students, and organizations across the globe with millions of API calls every month.
 
 [Pricing](https://azure.microsoft.com/en-gb/pricing/details/orbital) for Azure Orbital Earth Station contact time is available on-demand and reserved: 
 
