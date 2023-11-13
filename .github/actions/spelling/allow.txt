@@ -45,3 +45,9 @@ Cloudability
 chargeback
 Apptio
 showback
+narrowband
+wideband
+Kuiper
+SpaceX
+LEO
+MEO

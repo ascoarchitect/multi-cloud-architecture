@@ -27,7 +27,7 @@ Please note that these resources are not exhaustive and you should look at the c
 * **Network and Content Delivery**
 * **Quantum Technologies**
 * **Robotics**
-* **Satellite**
+* **[Satellite](./satellite.md)**
 * **Security, Identity and Compliance**
 * **Storage**
 
