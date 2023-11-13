@@ -67,7 +67,7 @@ Many marketplace vendors including the likes of SAP are now fully supporting ARM
 
 #### AWS Lambda
 
-AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service without provisioning or managing servers. The service lends itseld really well to event-driven architecture where you run your code based on a 'trigger' such as a HTTP API call or Eventbridge event. Event-driven architecture has the advantage of generally being cheaper to run than EC2 instances running 24x7 because you're only being charged for the time (down to the millisecond) that the execution is taking place.
+AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service without provisioning or managing servers. The service lends itself really well to event-driven architecture where you run your code based on a 'trigger' such as a HTTP API call or Eventbridge event. Event-driven architecture has the advantage of generally being cheaper to run than EC2 instances running 24x7 because you're only being charged for the time (down to the millisecond) that the execution is taking place.
 
 Take an example such as a photo upload application:
 
@@ -79,7 +79,7 @@ It's important to note that AWS Lambda is stateless, so it doesn't keep a track 
 
 #### Low Latency and High Sensitivity
 
-Should you have a requirement for running appplications which are highly sensitive to latency or you have compliance reasons why hosting on the Public Cloud isn't possible, then AWS Outposts might be an option to consider. AWS Outposts is a family of fully managed solutions delivering AWS infrastructure and services to virtually any on-premises or edge location for a truly consistent hybrid experience. Outposts solutions allow you to extend and run native AWS services on premises, and is available in a variety of form factors, from 1U and 2U Outposts servers to 42U Outposts racks, and multiple rack deployments.
+Should you have a requirement for running applications which are highly sensitive to latency or you have compliance reasons why hosting on the Public Cloud isn't possible, then AWS Outposts might be an option to consider. AWS Outposts is a family of fully managed solutions delivering AWS infrastructure and services to virtually any on-premises or edge location for a truly consistent hybrid experience. Outposts solutions allow you to extend and run native AWS services on premises, and is available in a variety of form factors, from 1U and 2U Outposts servers to 42U Outposts racks, and multiple rack deployments.
 
 With AWS Outposts, you can run some AWS services locally and connect to a broad range of services available in the local AWS Region. Run applications and workloads on premises using familiar AWS services, tools, and APIs. Outposts supports workloads and devices requiring low latency access to on-premises systems, local data processing, data residency, and application migration with local system interdependencies. 
 
@@ -128,7 +128,7 @@ With Azure, organizations can integrate their SAP and non-SAP data through an ex
 
 #### Deep Learning and Rendering
 
-For simulation, deep learning, graphics rendering, video editing, gaming and remote visualisation workloads, Azure has their N Series GPU-enabled virtual machines equipped with NVIDIA Tesla-series GPUs allowing users to move their traditional on-premises workflows into the cloud. This provides resillience and the ability to scale up or scale out their processing and reduce the time it would have taken to process rendering and computation on self-managed hardware. This capability extends across their desktop-as-a-service (DaaS) and server-based workloads.
+For simulation, deep learning, graphics rendering, video editing, gaming and remote visualisation workloads, Azure has their N Series GPU-enabled virtual machines equipped with NVIDIA Tesla-series GPUs allowing users to move their traditional on-premises workflows into the cloud. This provides resilience and the ability to scale up or scale out their processing and reduce the time it would have taken to process rendering and computation on self-managed hardware. This capability extends across their desktop-as-a-service (DaaS) and server-based workloads.
 
 Huge shout out to [Alexy Polkovnikov](https://www.linkedin.com/in/alexeypolkovnikov/) for his Azure Services resource which breaks down the latest list and a clear description for each service. Check it out [here](https://azurecharts.com/overview).
 
