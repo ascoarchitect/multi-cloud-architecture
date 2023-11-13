@@ -57,6 +57,7 @@ awsf
 awsm
 Bottlerocket
 chipset
+chipsets
 Daa
 Datacenter
 datacentre
