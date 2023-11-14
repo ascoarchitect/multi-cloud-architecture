@@ -39,6 +39,16 @@ Examples of where Generative AI can be used:
 
 ## Foundational Models
 
+A conventional machine learning flow typically involves a sequential process of data pre-processing, feature engineering, model training, validation, and deployment. Let's delve into each stage to gain a better understanding of how machine learning works:
+
+1. First, we have a load of data - this could be images, text, numbers, etc. Whatever it is, it's the data that our machine learning model will be working with.
+2. Next, we split this data into a few parts. One part is called the training data, and this part is used to train the model. Another part is called the testing data, and this part is used to see how well the model does at making predictions.
+3. Now, it's time to train the model. The training data is fed into the model, and the model uses this data to learn patterns and relationships. This can be time consuming, depending on how complex the model is and the amount of data it has to work with.
+4. Once the model has been trained, it's time to test it. The testing data is then fed into the model, and the model makes predictions based on the patterns and relationships it has learned.
+5. Finally, we evaluate the performance of the model. We look at how well it was able to predict the testing data, and we compare its performance to the performance of other models. If the performance is good, we can use the model to make predictions on new data.
+
+So, that's a basic overview of the conventional machine learning flow. It's a process that can take a lot of time and computational power, but in the end, it can help us understand and work with complex data and make predictions based on that data.
+
 <img src="./what-are-foundational-models.png" alt="Foundational Models" style="height: 400px;"/>
 
 Generative AI foundation models are a type of deep learning model that can be used to generate new data or information from existing data. They are designed to mimic the behavior of the human brain and can learn to represent and model complex data distributions.
