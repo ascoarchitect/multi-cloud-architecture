@@ -3,11 +3,11 @@
 
 In today's fast-paced, data-driven world, the fusion of Machine Learning (ML) and Artificial Intelligence (AI) has become a game-changer across diverse sectors. But within this realm of technological innovation, lies an even more disruptive technology - Generative AI.
 
-ML and AI have already proven their worth in optimising processes, predicting outcomes and automating tasks. However, Generative AI takes this a step further by not just understanding patterns but creating new content, solutions, and possibilities.
+AI and ML have already proven their worth in optimising processes, predicting outcomes and automating tasks. However, Generative AI takes this a step further by not just understanding patterns but creating new content, solutions, and possibilities.
 
-The synergy between ML/AI and Generative AI isn't confined to technology labs or niche applications; it's a powerhouse that resonates across every sector. Whether it's healthcare, finance, entertainment, or manufacturing, this collaboration fuels innovation and unlocks business value in ways previously unimaginable.
+The synergy between AI/ML and Generative AI isn't confined to technology labs or niche applications; it's a powerhouse that resonates across every sector. Whether it's healthcare, finance, entertainment, or manufacturing, this collaboration fuels innovation and unlocks business value in ways previously unimaginable.
 
-From revolutionising drug discovery in pharmaceuticals to enhancing customer experiences through personalised content, the application of Generative AI coupled with ML/AI has transformed industries' operational landscapes. It's not just about efficiency; it's about fostering innovation, creativity, and delivering unparalleled value.
+From revolutionising drug discovery in pharmaceuticals to enhancing customer experiences through personalised content, the application of Generative AI coupled with AI/ML has transformed industries' operational landscapes. It's not just about efficiency; it's about fostering innovation, creativity, and delivering unparalleled value.
 
 ## What's All The Hype About?
 
