@@ -88,7 +88,7 @@ Overall, all three cloud providers offer similar generative AI services, and the
 
 ## Getting Started
 
-There are several ways to get started with generative AI in a business context, but here are some general steps you can follow:
+There are several ways to get started with generative AI within your organisation, but here are some general steps you can follow:
 
 1. **Define your goals:** What do you want to accomplish with generative AI? This will help you choose the right approach and tools.
 2. **Research:** Read up on the latest research and trends in the field of generative AI, and familiarise yourself with specific tools and techniques that might be useful for your business.
