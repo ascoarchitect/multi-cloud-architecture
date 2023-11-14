@@ -51,6 +51,8 @@ So, that's a basic overview of the conventional machine learning flow. It's a pr
 
 <img src="./what-are-foundational-models.png" alt="Foundational Models" style="height: 400px;"/>
 
+*Source: Amazon Web Services*
+
 Generative AI foundation models are a type of deep learning model that can be used to generate new data or information from existing data. They are designed to mimic the behavior of the human brain and can learn to represent and model complex data distributions.
 
 One of the main applications of generative AI foundation models is in the field of natural language processing (NLP), where they can be used to generate text, such as news articles or social media posts, from a given prompt or seed text. They are also used in computer vision tasks, such as image generation, and in audio processing, where they can be used to generate new music or speech.
